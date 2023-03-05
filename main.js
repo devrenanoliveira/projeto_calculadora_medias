@@ -54,7 +54,7 @@ function atualizaTabela() { //função responsável por atualizar o conteúdo da
 function atualizaMediaFinal() { 
     const mediaFinal = calculaMediaFinal();
     
-    document.getElementById("media-final-valor").innerHTML = mediaFinal;
+    document.getElementById("media-final-valor").innerHTML = mediaFinal.toFixed(2); // o item "toFixed()" limita as casas decimas de acordo com o valor que eu colocar nos parênteses //
     document.getElementById("media-final-resultado").innerHTML = mediaFinal >= notaMinima ? spanAprovado : spanReprovado;
 }
 
