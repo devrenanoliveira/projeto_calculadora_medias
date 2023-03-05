@@ -1,0 +1,107 @@
+/*comando padrão para resetar o arquivo .css*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #E7E7E7;
+    padding-top: 100px;
+}
+
+header {
+    display: flex; /*para que os elementos fiquem um ao lado do outro*/
+    align-items: center; /*centralizar na vertical*/
+    margin-bottom: 40px; /*criando uma margin para afastar o cabeçalho dos demais itens*/
+}
+
+header img {
+    height: 36px;
+    margin-right: 16px;
+}
+
+header h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/*todo o comando abaixo significa dizer que todo o conteúdo do container vai ocupar 100% até 960px, fazendo com que o conteúdo fique centralizado, mesmo em um monitor Ultra Wide*/
+.container {    
+    max-width: 960px; 
+    width: 100%;
+    margin: 0 auto; /*para centralizar na horizontal*/
+}
+
+form{
+    display: flex; /*apesar de tudo já estar lado a lado, isso serve para deixar todos os itens no mesmo padrão de alinhamento (linha de cima com a linha de baixo*/
+    max-width: 640px;
+    width: 100%;
+    justify-content: space-between; /*distribuição igualitária entre os elementos*/
+    margin-bottom: 56px;
+}
+
+#form-notas .activity {
+    font-size: 24px;
+    padding: 8px;
+    background-color: white;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+#form-notas .grade {
+    font-size: 24px;
+    padding: 8px;
+    background-color: white;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+.add-button {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 8px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+}
+
+table th {
+    border-bottom: 2px solid black;
+    padding: 16px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+table td {
+    text-align: center; /*alinha o texto do elemento*/
+    font-size: 18px;
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.2); /*o comando rgba determina a cor e o valor final (0.2) a intensidade da cor escolhida.*/
+}
+
+table img {
+    height: 30px;
+}
+
+.resultado {
+    padding: 8px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border-radius: 3px;
+}
+
+.aprovado {
+    background-color: green;
+}
+
+.reprovado {
+    background-color: red;
+}

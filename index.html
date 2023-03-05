@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de médias</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Anton&family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!--Adicionando a fonte desejada-->
+    <link rel="stylesheet" href="./main.css"> <!--linkando a fonte ao main.css-->
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./images/logo.png" alt="capelo e diploma">
+            <h1>Calculadora de médias</h1>
+        </header>
+        <form id="form-notas">
+            <input class="activity" type="text" id="nome-atividade" required placeholder="Nome da atividade" />
+            <input class="grade" type="number" id="nota-atividade" required placeholder="Nota da atividade" min="0" max="10" /> <!--Aqui estou definindo um valor mínimo e máximo para o campo do formulário-->
+            <button class="add-button" type="submit">Adicionar +</button>
+        </form>
+        <table cellspacing="0"> <!--constrói a tabela--> <!--cellspacing retira o separador entre as células-->
+            <thead> <!--cabeçalbo da tabela-->
+                <tr> <!--linha para as tabelas "table row"-->
+                    <th> <!--header da tabela-->
+                        Nome da atividade
+                    </th>
+                    <th>
+                        Nota da atividade
+                    </th>
+                    <th>
+                        Aprovado?
+                    </th>
+                </tr>
+            </thead>
+            <tbody> <!--para adicionar o conteúdo da tabela-->
+                <!--<tr> *** ESSE <TR> FOI EXCLUÍDO PORQUE NÃO FAZIA MAIS SENTIDO USÁ-LO APÓS CRIAR AS LÓGICAS E JS ***
+                    <td>Atividade 1</td> aqui serve para criar a estrutura do que estará na célula de dados em uma tabela, em outras palavras, as colunas
+                    <td>7</td>
+                    <td><img src="./images/aprovado.png" alt="Emoji festejando" /></td>
+                </tr>-->
+            </tbody>
+            <tfoot> <!--adiciona rodapé na tabela-->
+                <tr>
+                    <td>Média final</td>
+                    <td id="media-final-valor">---</td>
+                    <td id="media-final-resultado"><span class="resultado reprovado">---</span></td> <!--é comum usar a tag <span> para aplicar estilos como cor, tamanho da fonte ou sublinhado em um trecho de texto dentro de um parágrafo ou em um link.-->
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
